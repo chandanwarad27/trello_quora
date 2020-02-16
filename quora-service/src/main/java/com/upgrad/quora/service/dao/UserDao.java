@@ -44,6 +44,7 @@ public class UserDao {
 
             return null;
         }
+
     }
 
     public UserEntity getUserByUserName(final String userName) {
@@ -60,5 +61,6 @@ public class UserDao {
 
     public void updateAuthToken(final UserAuthEntity updateUserAuthEntity) {
         entityManager.merge(updateUserAuthEntity);
+
     }
 }
